@@ -49,3 +49,18 @@ img{
     object-fit: contain;
 }
 
+
+@media(max-width: 600px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .grid-container > p {
+        grid-column-end: span 2;
+    }
+
+    .weather-logo {
+        grid-row-start: 1;
+    }
+}
